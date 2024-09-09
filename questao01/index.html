@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +10,22 @@
 </head>
 <body>
     <div class="container">
-        <form action="" class="form border rounded-3 p-4 m-auto">
+        <form action="" id="form" class="form border rounded-3 p-4 m-auto">
 
             <label for="nome" class="form-label">Nome completo</label>
-            <input type="text" class="form-control" id="nome" placeholder="...">
+            <input type="text" class="form-control" id="nome" placeholder="..." required>
 
             <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" placeholder="...">
+            <input type="email" class="form-control" id="email" placeholder="..." required>
 
             <label for="password" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="senha" placeholder="...">
+            <input type="password" class="form-control" id="senha" placeholder="..." required>
 
             <label for="confirmPassword" class="form-label">Confirme sua senha</label>
-            <input type="password" class="form-control" id="confirmPassword" placeholder="...">
+            <input type="password" class="form-control" id="confirmPassword" placeholder="..." required>
 
             <div class="d-flex justify-content-center gap-3 mt-3">
-                <input type="submit" value="Cadastrar" class="btn btn-primary" onclick="cadastro()">
+                <input type="submit" value="Cadastrar" class="btn btn-primary">
                 <input type="reset" value="Limpar" class="btn active">
             </div>
         </form>

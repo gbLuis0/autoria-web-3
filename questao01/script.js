@@ -1,29 +1,20 @@
-function camposVazios(){
-    let nome = document.getElementById('nome').value
-    let email = document.getElementById('email').value
-    let senha = document.getElementById('senha').value
-    let conSenha = document.getElementById('confirmPassword').value
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("form").addEventListener("submit", function(event) {
+        let nome = document.getElementById("nome").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let senha = document.getElementById("senha").value.trim();
+        let confirmPassword = document.getElementById("confirmPassword").value.trim();
 
-    // if (nome !== "" && email !== "" && senha !== "" && conSenha !== ""){
-    //     return true;
-    // }
-    // else{
-    //     return false;
-    // }
-    let bool = nome !== "" && email !== "" && senha !== "" && conSenha !== "";
-    return bool ? true : false;
+        if (!nome || !email || !senha || !confirmPassword) {
+            alert('Preencha todos os campos');
+            event.preventDefault();
+            return;
+        }
 
-}
-
-function compararSenhas(){
-    return conSenha !== senha ? false : true
-}
-
-function cadastro(){
-    if (camposVazios() && compararSenhas()){
-        alert('Cadatro realizado com sucesso!');       
-    }
-    else{
-        alert('Preencha os dados corretamente.')
-    }
-}
+        if (senha !== confirmPassword) {
+            alert('As senhas devem ser iguais');
+            event.preventDefault();
+            return;
+        }
+    });
+});
