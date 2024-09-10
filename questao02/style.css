@@ -1,0 +1,22 @@
+html, body{
+    height: 100%;
+}
+
+.form{
+    max-width: 300px;
+    background-color: white;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: rgb(200, 219, 245);
+}
+
+.idade{
+    font-size: 36px;
+    letter-spacing: 1px;
+}
