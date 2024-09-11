@@ -1,0 +1,10 @@
+.tarefa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+body{
+    background-color:  rgb(201, 245, 200);;
+}
