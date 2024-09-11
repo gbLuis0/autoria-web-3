@@ -1,0 +1,24 @@
+.hidden{
+    display: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+.form{
+    max-width: 700px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background-color: rgb(233, 231, 224);
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
