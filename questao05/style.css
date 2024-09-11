@@ -1,0 +1,20 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background-color: rgb(240, 239, 238);
+}
+
+#resultado{
+    font-size: 22px;
+    color: rgb(43, 37, 37);
+}
+
+.form{
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+}
